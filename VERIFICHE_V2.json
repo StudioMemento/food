@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "ui": {
+    "browser": "Chrome 154",
+    "viewports": [
+      "390×844",
+      "1440×1000",
+      "2560×1080"
+    ],
+    "flows": [
+      "cookie persistence",
+      "endless thumbnails",
+      "real touch rail swipe",
+      "six motion variants",
+      "allergen overlay",
+      "cart edit and return",
+      "table/seat booking",
+      "persistence and cancellation",
+      "privacy preferences",
+      "English translation",
+      "desktop navbar and ultrawide header"
+    ],
+    "javascriptErrors": [],
+    "externalRequests": []
+  },
+  "offline": {
+    "standalone": true,
+    "cards": 72,
+    "externalRequests": [],
+    "errors": [],
+    "socialImagesSquare": true,
+    "galleryProgress": true,
+    "smallPhoneReadingMode": true,
+    "selectionDisabled": true,
+    "contextMenuDisabled": true,
+    "viewport": "320×568",
+    "smallPhoneImageVisible": true
+  },
+  "logicAssertions": 14,
+  "webpAssetsDecoded": 231,
+  "oldBrandingMatches": 0,
+  "scope": "Chrome 154: desktop, mobile, ultrawide and small phone. Other browser engines were not exercised."
+}
