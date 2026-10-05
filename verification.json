@@ -1,35 +1,47 @@
 {
+  "version": 4,
   "passed": true,
-  "errors": [],
+  "browser": "Chromium 153",
   "viewports": [
-    1440,
-    390,
-    320
+    [
+      2048,
+      806
+    ],
+    [
+      1440,
+      1000
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      640
+    ],
+    [
+      844,
+      390
+    ]
   ],
   "checks": [
-    "hero scenes",
-    "gallery pause and selection",
-    "72 products",
-    "global player wrap",
-    "A/B reveal",
-    "cart customization",
-    "table-first booking",
-    "date-first booking (prior run)",
-    "reservation collision",
-    "persistence",
-    "cancellation",
-    "5 languages",
-    "3 independent social sliders",
-    "responsive overflow",
-    "compact player image below copy at 320 × 640"
+    "catalog and transparent 15-row allergen popup",
+    "80vh landscape player, six thumbs + reveal, global wrap and active category",
+    "cart and product customization",
+    "full viewport gallery with nine photos and unobstructed controls",
+    "both booking orders, 20 guests, occupied slots, persistence, cancellation and conflict prevention",
+    "three continuous social rails: autoplay, mouse drag, arrows, no counters",
+    "five languages",
+    "six viewport sizes, universal padding, image dimensions, no overflow",
+    "real touch swipe: reveal, next product and social drag"
   ],
-  "openingHoursBoundaryTests": 5,
-  "assetCounts": {
-    "products": 72,
-    "pngA": 72,
-    "pngB": 69,
-    "legacyWebpB": 3,
-    "generatedVenueImages": 3
-  },
-  "deployed": false
+  "errors": []
 }

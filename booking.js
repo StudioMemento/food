@@ -1,13 +1,152 @@
 // Demo availability engine. No network, no real reservation is created.
 export const tables=[
- {id:'T1',x:31.6,y:28.7,seats:2,zone:'Sala'},
- {id:'T2',x:20.5,y:37,seats:2,zone:'Sala'},
- {id:'T3',x:38.4,y:41.3,seats:4,zone:'Sala'},
- {id:'T4',x:28,y:49.5,seats:4,zone:'Veranda'},
- {id:'T5',x:52,y:50.5,seats:4,zone:'Sala'},
- {id:'T6',x:43,y:60.5,seats:6,zone:'Veranda'},
- {id:'T7',x:71.3,y:60.7,seats:6,zone:'Sala'},
- {id:'T8',x:60,y:70.4,seats:8,zone:'Veranda'}
+ {
+  "id": "T1",
+  "x": 31.6,
+  "y": 25.5,
+  "seats": 2,
+  "zone": "Sala"
+ },
+ {
+  "id": "T2",
+  "x": 25.3,
+  "y": 31.6,
+  "seats": 4,
+  "zone": "Sala"
+ },
+ {
+  "id": "T3",
+  "x": 20.7,
+  "y": 34.7,
+  "seats": 4,
+  "zone": "Sala"
+ },
+ {
+  "id": "T4",
+  "x": 17.9,
+  "y": 38.5,
+  "seats": 2,
+  "zone": "Sala"
+ },
+ {
+  "id": "T5",
+  "x": 11.5,
+  "y": 42.7,
+  "seats": 4,
+  "zone": "Sala"
+ },
+ {
+  "id": "T6",
+  "x": 21.6,
+  "y": 47.7,
+  "seats": 4,
+  "zone": "Sala"
+ },
+ {
+  "id": "T7",
+  "x": 28,
+  "y": 40.5,
+  "seats": 4,
+  "zone": "Sala"
+ },
+ {
+  "id": "T8",
+  "x": 33.4,
+  "y": 35.4,
+  "seats": 6,
+  "zone": "Sala"
+ },
+ {
+  "id": "T9",
+  "x": 44.7,
+  "y": 31.4,
+  "seats": 4,
+  "zone": "Sala"
+ },
+ {
+  "id": "T10",
+  "x": 47.8,
+  "y": 44,
+  "seats": 20,
+  "zone": "Sala"
+ },
+ {
+  "id": "T11",
+  "x": 66.4,
+  "y": 45,
+  "seats": 4,
+  "zone": "Sala"
+ },
+ {
+  "id": "T12",
+  "x": 72.1,
+  "y": 47.4,
+  "seats": 4,
+  "zone": "Sala"
+ },
+ {
+  "id": "T13",
+  "x": 77.8,
+  "y": 50.4,
+  "seats": 4,
+  "zone": "Sala"
+ },
+ {
+  "id": "T14",
+  "x": 60.7,
+  "y": 56.7,
+  "seats": 8,
+  "zone": "Sala"
+ },
+ {
+  "id": "T15",
+  "x": 80.3,
+  "y": 58.9,
+  "seats": 2,
+  "zone": "Sala"
+ },
+ {
+  "id": "T16",
+  "x": 52.2,
+  "y": 64.3,
+  "seats": 6,
+  "zone": "Sala"
+ },
+ {
+  "id": "T17",
+  "x": 64.8,
+  "y": 71.2,
+  "seats": 2,
+  "zone": "Sala"
+ },
+ {
+  "id": "T18",
+  "x": 27.7,
+  "y": 55.9,
+  "seats": 4,
+  "zone": "Sala"
+ },
+ {
+  "id": "T19",
+  "x": 9,
+  "y": 58.4,
+  "seats": 4,
+  "zone": "Esterno"
+ },
+ {
+  "id": "T20",
+  "x": 18.9,
+  "y": 64.1,
+  "seats": 4,
+  "zone": "Esterno"
+ },
+ {
+  "id": "T21",
+  "x": 29.4,
+  "y": 70.7,
+  "seats": 4,
+  "zone": "Esterno"
+ }
 ];
 export const duration=90;
 const mins=t=>{const [h,m]=t.split(':').map(Number);return h*60+m};
@@ -43,5 +182,5 @@ export function availableSlots(config,key,party,reservations=[],now=new Date()){
 }
 export function isValidReservation(candidate,config,reservations=[],now=new Date()){
  const table=tables.find(t=>t.id===candidate.table);
- return !!table&&Number.isInteger(candidate.party)&&candidate.party>=1&&candidate.party<=8&&Array.isArray(candidate.seats)&&candidate.seats.length===candidate.party&&new Set(candidate.seats).size===candidate.party&&candidate.seats.every(x=>Number.isInteger(x)&&x>=1&&x<=table.seats)&&slotsFor(config,candidate.date,now).some(s=>s.minute===candidate.minute)&&tableAvailable(table,candidate.date,candidate.minute,candidate.party,reservations);
+ return !!table&&Number.isInteger(candidate.party)&&candidate.party>=1&&candidate.party<=20&&Array.isArray(candidate.seats)&&candidate.seats.length===candidate.party&&new Set(candidate.seats).size===candidate.party&&candidate.seats.every(x=>Number.isInteger(x)&&x>=1&&x<=table.seats)&&slotsFor(config,candidate.date,now).some(s=>s.minute===candidate.minute)&&tableAvailable(table,candidate.date,candidate.minute,candidate.party,reservations);
 }
