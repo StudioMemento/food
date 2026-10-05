@@ -1,0 +1,362 @@
+[
+  {
+    "id": "brace",
+    "A": "Panini A/Golden bacon burger and fries-1.png",
+    "B": "Panini B/brace-b.png"
+  },
+  {
+    "id": "fondente",
+    "A": "Panini A/Gorgonzola beef sandwich with golden fries-2.png",
+    "B": "Panini B/fondente-b.png"
+  },
+  {
+    "id": "carbonara",
+    "A": "Panini A/Carbonara Burger with Golden Fries-3.png",
+    "B": "Panini B/carbonara-b.png"
+  },
+  {
+    "id": "essenziale",
+    "A": "Panini A/Classic burger with golden fries-4.png",
+    "B": "Panini B/essenziale-b.png"
+  },
+  {
+    "id": "velvet",
+    "A": "Panini A/Velvet burger with golden fries-5.png",
+    "B": "Panini B/velvet-b.png"
+  },
+  {
+    "id": "affumicato",
+    "A": "Panini A/Smoky jalapeño bacon burger with fries-6.png",
+    "B": "Panini B/affumicato-b.png"
+  },
+  {
+    "id": "cipolla-rossa",
+    "A": "Panini A/Caramelized onion burger with golden fries-7.png",
+    "B": "Panini B/cipolla-rossa-b.png"
+  },
+  {
+    "id": "mediterraneo",
+    "A": "Panini A/Mediterranean burger with fries on black plate-8.png",
+    "B": "Panini B/mediterraneo-b.png"
+  },
+  {
+    "id": "avocado",
+    "A": "Panini A/Avocado burger with golden fries-9.png",
+    "B": "Panini B/avocado-b.png"
+  },
+  {
+    "id": "oro-speziato",
+    "A": "Panini A/Crispy chicken sandwich and golden fries-10.png",
+    "B": "Panini B/oro-speziato-b.png"
+  },
+  {
+    "id": "piccante",
+    "A": "Panini A/Piccante Cheeseburger with Golden Fries-12.png",
+    "B": "Panini B/piccante-b.png"
+  },
+  {
+    "id": "orto",
+    "A": "Panini A/Artisan veggie sandwich with golden fries-11.png",
+    "B": "Panini B/orto-b.png"
+  },
+  {
+    "id": "costine",
+    "A": "Cucina A/Lacquered ribs with golden fries-3.png",
+    "B": "Cucina B/costine-b.png"
+  },
+  {
+    "id": "galletto",
+    "A": "Cucina A/Grilled spring chicken with rosemary fries-1.png",
+    "B": "Cucina B/galletto-b.png"
+  },
+  {
+    "id": "merluzzo",
+    "A": "Cucina A/Golden Beer-Battered Cod with Fries-2.png",
+    "B": "Cucina B/merluzzo-b.png"
+  },
+  {
+    "id": "cotoletta",
+    "A": "Cucina A/Golden chicken cutlet with fries-4.png",
+    "B": "Cucina B/cotoletta-b.png"
+  },
+  {
+    "id": "griglia",
+    "A": "Cucina A/Viennese sausages with fries and mustard-5.png",
+    "B": "Cucina B/griglia-b.png"
+  },
+  {
+    "id": "insalata",
+    "A": "Cucina A/Orto e mare composed salad-6.png",
+    "B": "Cucina B/insalata-b.png"
+  },
+  {
+    "id": "burrito",
+    "A": "Cucina A/Stuffed grilled chicken burrito halves-7.png",
+    "B": "Cucina B/burrito-b.png"
+  },
+  {
+    "id": "quesadilla",
+    "A": "Cucina A/Golden chicken quesadilla wedges on charcoal plate-8.png",
+    "B": "Cucina B/quesadilla-b.png"
+  },
+  {
+    "id": "tartare",
+    "A": "Cucina A/Beef tartare with golden yolk and toast-9.png",
+    "B": "Cucina B/tartare-b.png"
+  },
+  {
+    "id": "risotto",
+    "A": "Cucina A/Creamy golden saffron risotto-10.png",
+    "B": "Cucina B/risotto-b.png"
+  },
+  {
+    "id": "tagliata",
+    "A": "Cucina A/Rosemary Tagliata with Roast Potatoes-12.png",
+    "B": "Cucina B/tagliata-b.png"
+  },
+  {
+    "id": "polpo",
+    "A": "Cucina A/Grilled octopus with potato cream-11.png",
+    "B": "Cucina B/polpo-b.png"
+  },
+  {
+    "id": "anelli",
+    "A": "Stuzzicheria A/Golden onion rings on a charcoal plate-2.png",
+    "B": "Stuzzicheria B/anelli-b.png"
+  },
+  {
+    "id": "olive",
+    "A": "Stuzzicheria A/Golden stuffed Ascolana olives on black plate-1.png",
+    "B": "Stuzzicheria B/olive-b.png"
+  },
+  {
+    "id": "patate",
+    "A": "Stuzzicheria A/Golden shoestring fries on a black plate-3.png",
+    "B": "Stuzzicheria B/patate-b.png"
+  },
+  {
+    "id": "jalapeno",
+    "A": "Stuzzicheria A/Crispy red jalapeño cheese poppers-4.png",
+    "B": "Stuzzicheria B/jalapeno-b.png"
+  },
+  {
+    "id": "pulled",
+    "A": "Stuzzicheria A/Golden pulled-pork croquettes on a dark plate-7.png",
+    "B": "previous-live-version/pulled-b.webp"
+  },
+  {
+    "id": "straccetti",
+    "A": "Stuzzicheria A/Golden paprika chicken strips-6.png",
+    "B": "previous-live-version/straccetti-b.webp"
+  },
+  {
+    "id": "pepite",
+    "A": "Stuzzicheria A/Golden Chicken Nuggets on a Black Plate-8.png",
+    "B": "previous-live-version/pepite-b.webp"
+  },
+  {
+    "id": "fagiolini",
+    "A": "Stuzzicheria A/Cajun-crusted green bean crunch-9.png",
+    "B": "Stuzzicheria B/fagiolini-b.png"
+  },
+  {
+    "id": "alette",
+    "A": "Stuzzicheria A/Golden paprika chicken wings-10.png",
+    "B": "Stuzzicheria B/alette-b.png"
+  },
+  {
+    "id": "corn-dog",
+    "A": "Stuzzicheria A/Three golden corn dogs on black plate-11.png",
+    "B": "Stuzzicheria B/corn-dog-b.png"
+  },
+  {
+    "id": "condivisione",
+    "A": "Stuzzicheria A/Italian fried sharing platter-12.png",
+    "B": "Stuzzicheria B/condivisione-b.png"
+  },
+  {
+    "id": "crocchette",
+    "A": "Stuzzicheria A/Golden truffle potato croquettes-13.png",
+    "B": "Stuzzicheria B/crocchette-b.png"
+  },
+  {
+    "id": "tiramisu",
+    "A": "Dolci A/Tiramisu on a matte black plate-1.png",
+    "B": "Dolci B/tiramisu-b.png"
+  },
+  {
+    "id": "panna-cotta",
+    "A": "Dolci A/Vanilla panna cotta with berry coulis-2.png",
+    "B": "Dolci B/panna-cotta-b.png"
+  },
+  {
+    "id": "cannolo",
+    "A": "Dolci A/Sicilian cannoli on a charcoal plate-3.png",
+    "B": "Dolci B/cannolo-b.png"
+  },
+  {
+    "id": "tortino",
+    "A": "Dolci A/Molten chocolate cake with vanilla ice cream-4.png",
+    "B": "Dolci B/tortino-b.png"
+  },
+  {
+    "id": "millefoglie",
+    "A": "Dolci A/Vanilla millefeuille on a charcoal plate-5.png",
+    "B": "Dolci B/millefoglie-b.png"
+  },
+  {
+    "id": "crostata",
+    "A": "Dolci A/Seasonal Berry Crostata-6.png",
+    "B": "Dolci B/crostata-b.png"
+  },
+  {
+    "id": "bionda",
+    "A": "Birre A/Golden lager on a matte black platform.png",
+    "B": "Birre B/bionda-b.png"
+  },
+  {
+    "id": "ambrata",
+    "A": "Birre A/Copper Vienna lager in stemless tulip glass-1.png",
+    "B": "Birre B/ambrata-b.png"
+  },
+  {
+    "id": "blanche",
+    "A": "Birre A/Cloudy Blanche Beer on Black Platform-2.png",
+    "B": "Birre B/blanche-b.png"
+  },
+  {
+    "id": "scura",
+    "A": "Birre A/Notte scura_ dark beer on black platform-3.png",
+    "B": "Birre B/scura-b.png"
+  },
+  {
+    "id": "ipa",
+    "A": "Birre A/Golden Luppolo Intenso IPA-4.png",
+    "B": "Birre B/ipa-b.png"
+  },
+  {
+    "id": "zero",
+    "A": "Birre A/Alcohol-free golden lager in a tulip glass-5.png",
+    "B": "Birre B/zero-b.png"
+  },
+  {
+    "id": "barolo",
+    "A": "Vini A/Barolo wine glass on a dark platform-9.png",
+    "B": "Vini B/barolo-b.png"
+  },
+  {
+    "id": "brunello",
+    "A": "Vini A/Deep ruby Brunello on a black platform-13.png",
+    "B": "Vini B/brunello-b.png"
+  },
+  {
+    "id": "amarone",
+    "A": "Vini A/Dark ruby Amarone on matte black-14.png",
+    "B": "Vini B/amarone-b.png"
+  },
+  {
+    "id": "franciacorta",
+    "A": "Vini A/Franciacorta Satèn on a black platform-11.png",
+    "B": "Vini B/franciacorta-b.png"
+  },
+  {
+    "id": "chablis",
+    "A": "Vini A/Chablis glass on matte black platform-10.png",
+    "B": "Vini B/chablis-b.png"
+  },
+  {
+    "id": "rosato",
+    "A": "Vini A/Pale Provençal Rosé on Charcoal-12.png",
+    "B": "Vini B/rosato-b.png"
+  },
+  {
+    "id": "negroni",
+    "A": "Drinks A/Ruby Negroni on a black slab-15.png",
+    "B": "Drinks B/negroni-b.png"
+  },
+  {
+    "id": "americano",
+    "A": "Drinks A/Ruby Americano in a Black Tumbler-19.png",
+    "B": "Drinks B/americano-b.png"
+  },
+  {
+    "id": "gin-tonic",
+    "A": "Drinks A/Lime gin and tonic highball-16.png",
+    "B": "Drinks B/gin-tonic-b.png"
+  },
+  {
+    "id": "cuba-libre",
+    "A": "Drinks A/Cuba Libre with lime and ice-21.png",
+    "B": "Drinks B/cuba-libre-b.png"
+  },
+  {
+    "id": "highball",
+    "A": "Drinks A/Dark Whisky Cola Highball-22.png",
+    "B": "Drinks B/highball-b.png"
+  },
+  {
+    "id": "spritz",
+    "A": "Drinks A/Veneziano spritz on a matte platform-27.png",
+    "B": "Drinks B/spritz-b.png"
+  },
+  {
+    "id": "martini",
+    "A": "Drinks A/Dry martini with olive and lemon twist-26.png",
+    "B": "Drinks B/martini-b.png"
+  },
+  {
+    "id": "margarita",
+    "A": "Amari A/Salt-rimmed margarita in crystal coupe-24.png",
+    "B": "Amari B/margarita-b.png"
+  },
+  {
+    "id": "mojito",
+    "A": "Drinks A/Mint mojito on a matte-black platform-23.png",
+    "B": "Drinks B/mojito-b.png"
+  },
+  {
+    "id": "old-fashioned",
+    "A": "Drinks A/Amber Old Fashioned on Black Platform-20.png",
+    "B": "Drinks B/old-fashioned-b.png"
+  },
+  {
+    "id": "espresso-martini",
+    "A": "Amari A/Elegant Espresso Martini on Black Platform-17.png",
+    "B": "Amari B/espresso-martini-b.png"
+  },
+  {
+    "id": "daiquiri",
+    "A": "Amari A/Classic Daiquiri in a Crystal Coupe-25.png",
+    "B": "Amari B/daiquiri-b.png"
+  },
+  {
+    "id": "amaro-erbe",
+    "A": "Amari A/Amaro in a crystal tulip glass-18.png",
+    "B": "Amari B/amaro-erbe-b.png"
+  },
+  {
+    "id": "fernet",
+    "A": "Amari A/Dark Fernet in a tulip glass-28.png",
+    "B": "Amari B/fernet-b.png"
+  },
+  {
+    "id": "cynar",
+    "A": "Amari A/Dark chestnut amaro in a tulip glass-29.png",
+    "B": "Amari B/cynar-b.png"
+  },
+  {
+    "id": "montenegro",
+    "A": "Amari A/Copper-amber agrumato amaro-30.png",
+    "B": "Amari B/montenegro-b.png"
+  },
+  {
+    "id": "mirto",
+    "A": "Amari A/Burgundy mirto in a matte-black tulip glass-31.png",
+    "B": "Amari B/mirto-b.png"
+  },
+  {
+    "id": "limoncello",
+    "A": "Amari A/Limoncello in a Tulip Glass-32.png",
+    "B": "Amari B/limoncello-b.png"
+  }
+]

@@ -1,45 +1,36 @@
-# Memento Food V2
+# Memento Food · V3
 
-Demo di pub, hamburgeria e bar. HTML, CSS e JavaScript senza dipendenze runtime.
+Aggiornamento del 5 ottobre 2026, basato sulla versione pubblicata su mementofood.vercel.app.
 
-## Avvio e pubblicazione
+## Pubblicazione su Vercel
 
-- `npm run dev` espone `dist` sulla porta 4173.
-- `npm run build` verifica catalogo e asset.
-- `npm test` verifica disponibilità, capienza, sovrapposizioni e orari.
-- Su Vercel: framework Other, output directory `dist`; configurazione in `vercel.json`.
-- `MEMENTO_FOOD_V2_ANTEPRIMA.html` si apre direttamente dal filesystem. Include foto, font e dati: non richiede un server.
+La cartella contiene un sito statico completo. Usa la cartella che contiene `index.html` come root del progetto e il preset **Other**. Non serve un comando di build. Tutti i font e le immagini sono inclusi; non dipende dal vecchio sito.
 
-## Revisione
+Per una verifica locale: avvia `python -m http.server 8000` nella cartella, poi apri `http://localhost:8000`. Aprire direttamente index.html con `file://` non permette il caricamento dei dati JSON.
 
-Kaushan Script e Manrope del riferimento; logo aggiornato. Catalogo con prezzo a destra, aggiunta sotto, allergeni numerati e ingredienti in elenco. Player senza etichette superflue, nome grande, gesti verticali, frecce laterali e thumbnail squircle a scorrimento circolare. Navbar liquid glass CSS con fallback opaco: tutte le categorie su desktop; famiglia cibo/bevande compatta solo su mobile. Locale e carrello nella barra; lingua, telefono e info in alto.
+## Modifiche
 
-72 nuove immagini reveal, 4 foto di un pub immaginario e 3 foto social. Ogni foto prodotto occupa una tela quadrata nel player con spazio superiore. Le coordinate di registrazione sono in `catalog.json`: per i drink il bicchiere originale rimane interamente fisso e il livello motion è ritagliato sopra il bordo. Per il cibo il livello inferiore della foto originale conserva l’appoggio e la transizione è sfumata. Gli asset grezzi vanno usati con questi parametri del player, non con un semplice cambio di `src` a tutto schermo. `ASSET_MANIFEST_V2.json` conserva i prompt e la provenienza.
+- Hero con tre atmosfere selezionabili, parallax del puntatore e luce interattiva; rispetta la preferenza di movimento ridotto.
+- Introduzioni con titoli a bastoni, copy in corsivo e animazione di ingresso.
+- Catalogo a due colonne su mobile, prezzi più grandi, ingredienti a elenco e nuova riga allergeni/aggiunta.
+- Player continuo di 72 prodotti: scorrimento fra tutte le categorie, chiusura circolare, navbar sincronizzata, thumbnail degli ultimi drink a sinistra del primo panino. Frecce verticali e invito gestuale animato; swipe e tastiera supportati.
+- Header con logo rivisto, chiamata prima delle cinque lingue e blur progressivo senza gradiente nero.
+- IT, EN, DE, FR, ES per interfaccia principale, ingredienti, allergeni, gallery, orari, prenotazione e social. I nomi di fantasia dei prodotti restano italiani nelle tre nuove lingue. I testi estesi delle informative privacy mantengono le versioni IT/EN.
+- Sei scene nella gallery, didascalia centrale, avanzamento e pausa. Due nuove fotografie del locale e un nuovo render architettonico.
+- Prenotazione in entrambi i sensi, con otto tavoli interattivi, 90 minuti per prenotazione, disponibilità simulata variabile, conferma, persistenza e cancellazione. Le prenotazioni bloccano anche gli slot sovrapposti.
+- Tre slider distinti: sei post Instagram, sei recensioni Google e sei Tripadvisor, comprese recensioni da tre e quattro stelle. Contenuti dimostrativi.
+- Chiusura rivista. Lunedì chiuso; martedì–giovedì 18:00–00:00; venerdì–domenica 18:00–02:00, con gestione del servizio oltre mezzanotte.
 
-Il carrello è un dialogo sovrapposto: chiudendolo si torna allo stesso prodotto e alla stessa navigazione. Quantità, personalizzazioni e note restano locali. Nessun ordine viene inviato.
+## Immagini e futura ottimizzazione
 
-## Prenotazioni
+Sono inclusi 72 PNG A e 69 PNG B forniti, copiati senza ricompressione o modifica. Tre viste B non erano presenti nell’archivio: `pulled`, `straccetti`, `pepite`. Per queste sono conservate le tre WebP della versione pubblicata. `asset-mapping.json` documenta gli abbinamenti.
 
-Calendario a 90 giorni, slot ogni 30 minuti, permanenza di 90 minuti, preavviso di 30 minuti; disponibilità collegata agli orari in Europe/Rome. Planimetria fittizia con 8 tavoli, 2–8 posti, scelta dei singoli posti e dei coperti. Verifica capienza e sovrapposizioni, conferma e annullamento, persistenza sul dispositivo. Alcuni tavoli sono occupati da un calendario simulato ripetibile.
+I percorsi per sostituire successivamente gli asset con WebP sono in `catalog.json`: `image`, `reveal`, `thumbnail`. Il player carica le viste B quando richieste; catalogo e immagini delle thumbnail usano caricamento progressivo. Questa consegna conserva il peso dei PNG richiesto per la fase di sviluppo.
 
-Questa è una demo locale: non esiste una disponibilità condivisa tra clienti e non vengono inviate prenotazioni a un locale. Per l’esercizio reale servono API/database con blocco atomico del tavolo, gestione staff e notifiche. Non raccoglie nomi, recapiti o pagamenti.
+## Modalità dimostrativa
 
-## Social, orari e privacy
+Prenotazioni e carrello rimangono nel browser. Non vengono inviati ordini, messaggi o prenotazioni a un locale. Non è presente un numero telefonico reale: il pulsante chiama mantiene il contatto Memento Studio. Per collegare un locale reale servono numero, backend prenotazioni e dati operativi verificati. Il sito non include analytics o feed social incorporati.
 
-Post Instagram e recensioni Google/Tripadvisor dichiarati di esempio. Nessun punteggio è presentato come dato reale. Orari dimostrativi, stato aggiornato ogni 30 secondi, gestione oltre mezzanotte e chiusure eccezionali in `config.json`.
+## Verifica
 
-Popup privacy, preferenze e informative IT/EN. Non sono installati tracker, analytics, cookie pubblicitari o embed social. La scelta «Solo necessari» e la chiusura mantengono questa configurazione. Le categorie assenti non possono essere abilitate; si possono cancellare i dati locali dal pannello. La memoria locale contiene carrello, lingua, conferme demo e preferenza privacy.
-
-L’informativa descrive questa demo, non certifica la conformità di un’attività reale. Prima della messa in esercizio completare identità e indirizzo del titolare, fornitori di hosting/prenotazione, basi giuridiche, conservazione dei log ed eventuali trasferimenti. Font e immagini sono locali. I riferimenti utilizzati sono le [FAQ del Garante](https://www.garanteprivacy.it/faq/cookie) e le [Linee guida cookie del 10 giugno 2021](https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9677876).
-
-Selezione dei testi e menu contestuale sono disattivati sull’interfaccia; campi di inserimento e testo dell’informativa restano selezionabili per accessibilità e uso dei moduli. Questo accorgimento non è una protezione dalla copia del codice o degli asset.
-
-## Configurazione
-
-`dist/catalog.json`: 72 prodotti (12 Panini, 12 Cucina, 12 Stuzzicheria, 6 Dolci, 6 Birre, 6 Vini, 12 Drinks, 6 Amari), prezzi dimostrativi e coordinate A/B. Ricette e associazioni allergeni richiedono verifica prima dell’uso reale.
-
-`dist/config.json`: orari, eccezioni, contatti. `dist/booking.js`: planimetria e disponibilità demo. `dist/experience.js`: calendario, social e privacy. `dist/v2.css`: revisione visuale. `VERIFICHE_V2.json`: risultati del collaudo.
-
-## Collaudo V2
-
-Verificato in Chrome 154 a 320×568, 390×844, 1440×1000 e 2560×1080: navigazione touch, immagini reveal, thumbnail circolari, carrello e personalizzazioni, allergeni, calendario/tavoli/posti, conferma e annullamento, persistenza locale, privacy e cambio lingua. Anteprima autonoma senza richieste esterne. Nessun errore JavaScript nei flussi esercitati. 14 verifiche della logica prenotazioni e decodifica di tutti i 231 asset WebP. Altri motori browser non sono stati eseguiti. Le schermate sono in `verifica-visiva/`.
+Verificati in Chromium: flussi di prenotazione da data e da tavolo, collisioni e persistenza, carrello e personalizzazione, cambio lingua, player circolare, transizione A/B, gallery e social. Controllati desktop 1440 px e mobile 390/320 px. Testati gli orari a cavallo della mezzanotte. I dettagli sono in `verification.json`.

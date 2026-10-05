@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "errors": [],
+  "viewports": [
+    1440,
+    390,
+    320
+  ],
+  "checks": [
+    "hero scenes",
+    "gallery pause and selection",
+    "72 products",
+    "global player wrap",
+    "A/B reveal",
+    "cart customization",
+    "table-first booking",
+    "date-first booking (prior run)",
+    "reservation collision",
+    "persistence",
+    "cancellation",
+    "5 languages",
+    "3 independent social sliders",
+    "responsive overflow",
+    "compact player image below copy at 320 × 640"
+  ],
+  "openingHoursBoundaryTests": 5,
+  "assetCounts": {
+    "products": 72,
+    "pngA": 72,
+    "pngB": 69,
+    "legacyWebpB": 3,
+    "generatedVenueImages": 3
+  },
+  "deployed": false
+}
