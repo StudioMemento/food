@@ -1,7 +1,7 @@
 {
-  "version": 4,
+  "version": 5,
   "passed": true,
-  "browser": "Chromium 153",
+  "browser": "Chromium",
   "viewports": [
     [
       2048,
@@ -24,6 +24,10 @@
       844
     ],
     [
+      360,
+      740
+    ],
+    [
       320,
       640
     ],
@@ -33,15 +37,19 @@
     ]
   ],
   "checks": [
-    "catalog and transparent 15-row allergen popup",
-    "80vh landscape player, six thumbs + reveal, global wrap and active category",
-    "cart and product customization",
-    "full viewport gallery with nine photos and unobstructed controls",
-    "both booking orders, 20 guests, occupied slots, persistence, cancellation and conflict prevention",
-    "three continuous social rails: autoplay, mouse drag, arrows, no counters",
-    "five languages",
-    "six viewport sizes, universal padding, image dimensions, no overflow",
-    "real touch swipe: reveal, next product and social drag"
+    "Minimal logo hero with hover response, two working navigation actions and live opening status",
+    "Catalog purchase controls bottom-right, full add-to-cart text and working cart addition",
+    "Eight viewport sizes: common header gutter, no horizontal overflow and two mobile catalog columns",
+    "Allergen popup: 15 rows, darker backdrop, larger yellow bold active entries, plain close icon and no horizontal scrollbar",
+    "Player: identical frame and text positions before/after A/B reveal and between products at all eight sizes",
+    "Six dimmed thumbnails, fading ends, more than 20px clearance above dock and reveal chevron at 75% height",
+    "Centered swipe hint disappears on interaction or automatically; image focus box removed on pointer return and keyboard focus retained",
+    "Five language buttons work with pointer and keyboard, translating catalog and allergens without overflow",
+    "Contact popup includes +39 328 545 4661 linked to tel:+393285454661",
+    "Global player cycle wraps from first food item to last drink; navbar active category follows",
+    "Booking action reaches the 21-table booking map; new exterior loads in gallery, location and social content",
+    "Real touch: swipe up reveals image, horizontal swipe changes product with no position jump and Instagram drag works",
+    "Reduced-motion preference respected; no browser JavaScript errors or failed requests observed"
   ],
   "errors": []
 }

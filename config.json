@@ -2,7 +2,7 @@
   "brand": "Memento Food",
   "mode": "demo",
   "timezone": "Europe/Rome",
-  "phone": null,
+  "phone": "+393285454661",
   "whatsapp": null,
   "email": "info@mementostudio.it",
   "website": "https://mementostudio.it",
@@ -46,5 +46,6 @@
       ]
     ]
   },
-  "exceptions": {}
+  "exceptions": {},
+  "phoneDisplay": "+39 328 545 4661"
 }

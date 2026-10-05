@@ -40,6 +40,3 @@ dialog.allergen-modal{width:min(960px,calc(100% - var(--page-pad)*2));max-width:
 
 .category-section[data-family="food"] .card-photo{aspect-ratio:1.5}.product-grid{scroll-margin-top:0}.venue-caption{bottom:195px}.gallery-controls{bottom:137px}
 @media(max-width:599px){.venue-caption{bottom:185px}.gallery-controls{bottom:129px}.category-section[data-family="food"] .card-photo{aspect-ratio:1.45}}
-/* Keep the entire A photograph above the rail, including short phones and tablets.
-   The B composition can scroll independently without ever shrinking its width. */
-@media(orientation:portrait){.player:not(.revealed) .player-stage{position:absolute!important;inset:auto 0 0!important;margin:0}.player:not(.revealed) .player-content{overflow-y:auto}.player.revealed .player-stage{position:relative!important;inset:auto!important;margin-top:16px}}
